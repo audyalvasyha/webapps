@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/sb-admin-2.min.css">
+    <link rel="stylesheet" href="css/sb-admin-2.css">
     <style type="text/css">
         .main {
             overflow-x: hidden;
@@ -78,6 +78,21 @@
             top: 0;
             left: 0;
         }
+
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            background: #dbdbdb;
+        }
+
+        .bg-white {
+            width: 31.8%;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -86,7 +101,7 @@
         <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none p-2">
             <ul class="navbar-nav nav-justified w-100">
                 <div class="input-group pl-1 pr-1">
-                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                    <input type="search" class="form-control rounded" placeholder="Temukan game" aria-label="Search"
                         aria-describedby="search-addon" />
                 </div>
                 <li class="nav-item">
@@ -101,7 +116,7 @@
                 </li>
             </ul>
         </nav>
-        <nav class="navbar bg-light navbar-expand d-md-none d-lg-none d-xl-none px-2 pt-2 pb-0">
+        <nav class="navbar navbar-expand d-md-none d-lg-none d-xl-none px-2 pt-1 pb-0">
             <ul class="nav navbar-nav nav-justified w-100">
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
@@ -121,17 +136,12 @@
     <div class="container">
         <div class="card navbar-expand shadow">
             <ul class="nav navbar-nav w-100">
-                <div class="px-2 my-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-credit-card" viewBox="0 0 16 16" style="align-items: center;display: flex;">
-                        <path
-                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
-                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
-                    </svg>
+                <div class="px-3 my-auto">
+                    <i class="fas fa-wallet text-gray-500" style="font-size:35px;"></i>
                 </div>
                 <div class="my-2 border-right"></div>
                 <li class="nav-item mr-auto">
-                    <div class="nav-link py-1 text-gray-600"><i
+                    <div class="nav-link py-2 ml-2 text-gray-600"><i
                             class="fas fa-dollar-sign mr-2 text-warning"></i>Rp40<br>
                         <div style="font-size: 13px;color: rgb(167, 165, 165);">
                             Isi Saldo Pay
@@ -140,7 +150,7 @@
                 </li>
                 <div class="my-2 border-right"></div>
                 <li class=" nav-item mr-auto">
-                    <div class="nav-link py-1 text-gray-600"><i class="fas fa-user mr-2 text-warning"></i>Audy<br>
+                    <div class="nav-link py-2 ml-2 text-gray-600"><i class="far fa-user mr-2 text-warning"></i>Audy<br>
                         <div style="font-size: 13px;color: rgb(167, 165, 165);">
                             Account User
                         </div>
@@ -149,7 +159,7 @@
             </ul>
         </div>
     </div>
-    <div class="container pt-3">
+    <div class="container pt-3 mb-3">
         <div class="card navbar-expand shadow py-2">
             <ul class="nav navbar-nav nav-justified w-100 px-1">
                 <li class="nav-item">
@@ -175,6 +185,113 @@
             </ul>
         </div>
     </div>
+    <span class="pl-3">Game Populer</span>
+    <div class="container mt-2 mb-5">
+        <div class="card bg-white float-left">
+            <img src="./4151524-ecommerce/image-pubg.jpeg" alt="" height="115" class="card-img-top bg-light rounded">
+        </div>
+        <div class="card bg-white float-left ml-2">
+            <img src="./4151524-ecommerce/images-freefire.jpeg" alt="" height="115"
+                class="card-img-top bg-light rounded">
+        </div>
+        <div class="card bg-white float-left ml-2">
+            <img src="./4151524-ecommerce/images-mobilelegends.jpeg" alt="" height="115"
+                class="card-img-top bg-light rounded">
+        </div>
+        <div class="card bg-white float-left">
+            <img src="./4151524-ecommerce/images-cod.jpeg" alt="" height="115" class="card-img-top bg-light rounded">
+        </div>
+        <div class="card bg-white float-left ml-2">
+            <img src="./4151524-ecommerce/images-lordm.jpeg" alt="" height="115" class="card-img-top bg-light rounded">
+        </div>
+        <div class="card bg-white float-left ml-2">
+            <img src="./4151524-ecommerce/images-aov.jpeg" alt="" height="115" class="card-img-top bg-light rounded">
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase"><i class="fas fa-wallet mr-2"></i><strong>AMAN & TERPERCAYA</strong></h5>
+                    <p>
+                        Solusi pembayaran terpercaya dengan jaminan 100% pada setiap transaksi.
+                    </p>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        <strong>Perlindungan
+                            24/7
+                        </strong>
+                    </h5>
+                    <p>
+                        Perlindungan dan pelayanan 24 jam dalam setiap transaksi Anda.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text"><i class="fas fa-gift mr-2"></i> Bonus Menarik</h5>
+                    <p>
+                        Gunakan bonus aktivasi Anda untuk pembelian berbagai produk di DANA.
+                    </p>
+                </div>
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Hubungi Kami</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-dark">Telp 0274-8179437</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">WA 081271911450</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">FB alogo_fanspage</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">IG @alogo_id</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">Customer Service</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-dark">Penawaran & Promo Special</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Senin - Minggu</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">24 Jam Non Stop</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Email: cs@aLogo.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 alogo.com - All Right Reserved
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 </body>
 
 </html>
